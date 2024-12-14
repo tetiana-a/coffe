@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мир Кофе</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #000000;
+      color: #ffffff;
+    }
+
+    header {
+        background-image:url(/0.jpg);
+      color: #ffffff;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.5em;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #6f4e37;
+      font-size: 1.2em;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    .intro {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .intro img {
+      max-width: 40%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .intro img:hover {
+      transform: scale(1.05);
+    }
+
+    .about {
+      padding: 30px;
+      background-color: #0c0600;
+      color: #ffffff;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .about h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      line-height: 1.6;
+      font-size: 1.2em;
+    }
+
+    .coffee-types {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+      background-color: #000000;
+    }
+
+    .coffee-types div {
+      background: rgb(9, 9, 9);
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .coffee-types div:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .coffee-types div img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .coffee-types div h3 {
+      margin-top: 15px;
+      font-size: 1.5em;
+    }
+
+    .coffee-types div p {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color:  #0c0600;
+      color: white;
+      margin-top: 30px;
+      opacity: 0;
+      animation: fadeInFooter 1.5s 0.5s forwards;
+    }
+
+    @keyframes fadeInFooter {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Мир Кофе</h1>
+    <p>Погрузитесь в удивительный мир кофе и его вкусов</p>
+  </header>
+
+  <nav>
+    <a href="#about">О кофе</a>
+    <a href="#types">Виды кофе</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+
+  <section class="intro">
+    <img src="/1.jpeg" alt="Чашка кофе">
+  </section>
+
+  <section class="about" id="about">
+    <h2>О кофе</h2>
+    <p>Кофе — это не просто напиток, это стиль жизни. Сочетая богатые ароматы и глубокие вкусы, он вдохновляет миллионы людей по всему миру. Каждый глоток переносит вас в атмосферу утренней бодрости или вечернего уюта. Хотите узнать больше? Погрузитесь в мир кофейных традиций и рецептов.</p>
+  </section>
+
+  <section class="coffee-types" id="types">
+   
+
+    <div>
+      <img src="/2.jpeg" alt="Эспрессо">
+      <h3>Эспрессо</h3>
+      <p>Классический крепкий напиток с насыщенным вкусом и тонкой пенкой.</p>
+    </div>
+
+    <div>
+      <img src="/3.jpeg" alt="Латте">
+      <h3>Латте</h3>
+      <p>Мягкий напиток на основе молока с нежной кофейной ноткой.</p>
+    </div>
+
+    <div>
+      <img src="/4.jpeg" alt="Капучино">
+      <h3>Капучино</h3>
+      <p>Сочетание крепкого кофе, молока и воздушной молочной пенки.</p>
+    </div>
+
+    <div>
+      <img src="/5.jpeg" alt="Мокка">
+      <h3>Мокка</h3>
+      <p>Идеальный выбор для любителей шоколада и кофе.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2024 Мир Кофе. Все права защищены. Свяжитесь с нами по email: coffee@world.com</p>
+  </footer>
+</body>
+</html>
